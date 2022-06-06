@@ -13,7 +13,6 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 ### Images
 - Baixar imagem: `docker pull {{imageName}}`
 - Listar imagens: `docker images`
-- - Lincar diretórios: `-v {{hostPath}}:{{containerPath}}` || `--mount type=bind,source={{hostPath}},target={{containerPath}}`
 - Remover imagem: `docker rmi {{imageName}}`
 - - Remover todas as imagens: `docker rmi $(docker images -aq) --force`
 - Compilar imagem: `docker build .`
@@ -25,6 +24,7 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 - - Terminal virtual: `-t`
 - - Executar em background: `-d`
 - - Expor portas: `-P` || `-p {{hostPort}}:{{containerPort}}`
+- - Lincar diretórios: `-v {{hostPath}}:{{containerPath}}` || `--mount type=bind,source={{hostPath}},target={{containerPath}}`
 - inspecionar container: `docker inspect {{containerId}}`
 - Listar containers: `docker ps` || `docker container ls`
 - - Containers encerrados: `-a`
