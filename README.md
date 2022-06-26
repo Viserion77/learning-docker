@@ -67,5 +67,5 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 
 ## Sample comande
 ```bash
-docker run -it --name Ubuntu --mount type=bind,source=$(pwd),target=/github ubuntu bash
+docker run -it --name ubuntu --mount type=bind,source=$(pwd),target=/github ubuntu bash
 ```
