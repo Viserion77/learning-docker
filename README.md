@@ -56,6 +56,7 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 - Subindo um serviço: `docker service create {{imageName}}`
 - Listar serviços: `docker service ls`
 - Listar tasks: `docker service ps {{serviceId}}`
+- Remover serviço: `docker service rm {{serviceId}}`
 #### Worker
 - Entrar em um swarm: `docker swarm join --token {{token}} {{ip}}:{{port}}`
 - Sair do swarm: `docker swarm leave`
