@@ -59,6 +59,7 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 - Remover serviço: `docker service rm {{serviceId}}`
 - - Remover todos os serviços: `docker service rm $(docker service ls -q)`
 - Rebaixar node: `docker node demote {{nodeId}}`
+- Atualizar status de um node: `docker node update {{nodeId}} --availability {{availability}}`
 #### Worker
 - Entrar em um swarm: `docker swarm join --token {{token}} {{ip}}:{{port}}`
 - Sair do swarm: `docker swarm leave`
