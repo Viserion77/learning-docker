@@ -5,6 +5,7 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 # curso realizado
 [Certificação Docker DCA - Alura](https://cursos.alura.com.br/formacao-docker-dca)
 - [[C]Docker: criando gerenciando containers](https://cursos.alura.com.br/certificate/viserion77/docker-criando-gerenciando-containers)
+- [[C]Docker Swarm: orquestrando containers](https://cursos.alura.com.br/certificate/viserion77/docker-swarm-cluster-container)
 
 ## Comando uteis para docker
 
@@ -64,6 +65,9 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 - Atualizar restrições de um serviço: `docker service update {{serviceId}} --constraint-add node.role=={{role}}`
 - Atualizar numero de replicas de um serviço: `docker service update {{serviceId}} --replicas {{replicas}}`
 - Iniciar serviço em um modo especifico: `docker service create --mode {{mode}} {{imageName}}`
+- Iniciar stack de deploy: `docker stack deploy --compose-file docker-compose.yml {{stakName}}`
+- Listar staks: `docker stack ls`
+- Remover stak: `docker stack rm {{stackName}}`
 #### Worker
 - Entrar em um swarm: `docker swarm join --token {{token}} {{ip}}:{{port}}`
 - Sair do swarm: `docker swarm leave`
