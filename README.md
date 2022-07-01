@@ -25,7 +25,8 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 - - Executar em background: `-d`
 - - Expor portas: `-P` || `-p {{hostPort}}:{{containerPort}}`
 - - Lincar diretórios: `-v {{hostPath}}:{{containerPath}}` || `--mount type=bind,source={{hostPath}},target={{containerPath}}`
-- inspecionar container: `docker inspect {{containerId}}`
+- Inspecionar container: `docker inspect {{containerId}}`
+- - Formato mais legível: `--pretty` 
 - Listar containers: `docker ps` || `docker container ls`
 - - Containers encerrados: `-a`
 - - Retornar somente ids: `-q`
@@ -60,6 +61,9 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 - - Remover todos os serviços: `docker service rm $(docker service ls -q)`
 - Rebaixar node: `docker node demote {{nodeId}}`
 - Atualizar status de um node: `docker node update {{nodeId}} --availability {{availability}}`
+- Atualizar restrições de um serviço: `docker service update {{serviceId}} --constraint-add node.role=={{role}}`
+- Atualizar numero de replicas de um serviço: `docker service update {{serviceId}} --replicas {{replicas}}`
+- Iniciar serviço em um modo especifico: `docker service create --mode {{mode}} {{imageName}}`
 #### Worker
 - Entrar em um swarm: `docker swarm join --token {{token}} {{ip}}:{{port}}`
 - Sair do swarm: `docker swarm leave`
