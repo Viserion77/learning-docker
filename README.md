@@ -74,6 +74,9 @@ e a fonte de conhecimento base será o [alura](https://cursos.alura.com.br).
 
 
 ## Sample comande
+
+Este exemplo vai baixar uma imagem do ubuntu, apois isto vai criar um container com esta imagem e realizar um link entre a pasta atual e a pasta github no container
 ```bash
+docker pull ubuntu
 docker run -it --name ubuntu --mount type=bind,source=$(pwd),target=/github ubuntu bash
 ```
